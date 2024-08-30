@@ -7,7 +7,7 @@ phases:
   build:
     commands:
       - npm run build
-      - aws s3 sync build/ s3://my-react-bucket02/
+      - aws s3 sync build/ s3://s3-deploy-codepipeline/
 
 artifacts:
   files:
